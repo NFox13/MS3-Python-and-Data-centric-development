@@ -18,6 +18,13 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
+@app.route('/get_home')
+def get_home():
+    """
+    On page load, index page is displayed.
+    """
+    return render_template('index.html')
+    
 @app.route("/get_recipes")
 def get_recipes():
     recipes = mongo.db.recipes.find()
