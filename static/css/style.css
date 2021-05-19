@@ -1,0 +1,11 @@
+.navbar {
+    background-color: #3c1642;
+}
+
+.navbar-nav li a {
+    color: white;
+}
+
+.fa-bars {
+    color: white;
+}
