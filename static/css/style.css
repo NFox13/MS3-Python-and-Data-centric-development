@@ -1,3 +1,5 @@
+/* ---------------------------------------------base.html*/
+/* ---------------------------------------------Navbar*/
 .navbar {
     background-color: #3c1642;
 }
@@ -18,4 +20,25 @@
 
 .btn-outline-success {
     color: #affc41;
+}
+
+/* ---------------------------------------------Registration page*/
+
+.card-header {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-title {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.register-btn {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+    background-color: #3c1642;
 }
