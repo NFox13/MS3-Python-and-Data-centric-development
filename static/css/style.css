@@ -22,6 +22,17 @@
     color: #affc41;
 }
 
+/* ---------------------------------------------footer*/
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #3c1642;
+  color: white;
+  text-align: center;
+}
+
 /* ---------------------------------------------Registration page*/
 
 .card-header {
