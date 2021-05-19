@@ -2,10 +2,20 @@
     background-color: #3c1642;
 }
 
+.navbar-brand {
+    color: #affc41;
+    font-family: 'Roboto', sans-serif;
+}
+
 .navbar-nav li a {
     color: white;
 }
 
 .fa-bars {
-    color: white;
+    color: #affc41;
+    margin: auto;
+}
+
+.btn-outline-success {
+    color: #affc41;
 }
