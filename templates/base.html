@@ -41,6 +41,9 @@
                             <a class="nav-link" href="{{ url_for('register') }}">register</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('register') }}">login</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Products</a>
                         </li>
                     </ul>
@@ -51,11 +54,25 @@
                 </div>
             </div>
         </nav>
-       
-    </header>
 
-    {% block content %}
-    {% endblock %}
+    </header>
+    <section>
+        <!-- flash messages -->
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+        <div class="row flashes">
+            <h4>{{ message }}</h4>
+        </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </section>
+
+    <main class="container">
+        {% block content %}
+        {% endblock %}
+    </main>
 
     <footer class="footer">
         <p>The Pea Pod footer</p>

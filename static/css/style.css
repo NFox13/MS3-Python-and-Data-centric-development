@@ -33,6 +33,13 @@
   text-align: center;
 }
 
+/* ---------------------------------------------Flash messages*/
+.flashes h4 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #affc41;
+}
+
 /* ---------------------------------------------Registration page*/
 
 .card-header {
