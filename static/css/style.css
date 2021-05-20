@@ -65,6 +65,12 @@
 }
 
 .register-a {
-     text-align: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ---------------------------------------------Profile page*/
+.profile {
+    text-align: center;
     font-family: 'Roboto', sans-serif;
 }
