@@ -11,6 +11,7 @@
 
 .navbar-nav li a {
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 .fa-bars {
@@ -20,6 +21,10 @@
 
 .btn-outline-success {
     color: #affc41;
+}
+
+.search-bt {
+    font-family: 'Roboto', sans-serif;
 }
 
 /* ---------------------------------------------footer*/
@@ -38,6 +43,26 @@
     text-align: center;
     font-family: 'Roboto', sans-serif;
     background-color: #affc41;
+}
+
+/* ---------------------------------------------Home page*/
+.hiw-head {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hiw-card {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hiw-card-body {
+    background-color: #affc41;
+}
+
+.carousel-item {
+    max-height: 400px;
+    min-width: auto;
 }
 
 /* ---------------------------------------------Registration/login page*/

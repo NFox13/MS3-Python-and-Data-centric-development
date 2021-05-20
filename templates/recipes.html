@@ -1,17 +1,31 @@
 {% extends "base.html" %}
 {% block content %}
 
-    {% for recipe in recipes %}
-        {{ recipe.recipe_name }}<br>
-        {{ recipe.cuisine_type }}<br>
-        {{ recipe.recipe_ingredients }}<br>
-        {{ recipe.recipe_description }}<br>
-        {{ recipe.recipe_preparation }}<br>
-        {{ recipe.cooking_time }}<br>
-        {{ recipe.serving_size }}<br>
-        {{ recipe.recipe_author }}<br>
-        {{ recipe.recipe_date }}<br>
-        {{ recipe.is_vegan }}<br>
-    {% endfor %}
+{% for recipe in recipes %}
+{{ recipe.recipe_name }}<br>
+{{ recipe.cuisine_type }}<br>
+{{ recipe.recipe_ingredients }}<br>
+{{ recipe.recipe_description }}<br>
+{{ recipe.recipe_preparation }}<br>
+{{ recipe.cooking_time }}<br>
+{{ recipe.serving_size }}<br>
+{{ recipe.recipe_author }}<br>
+{{ recipe.recipe_date }}<br>
+{{ recipe.is_vegan }}<br>
+{% endfor %}
+
+<p>
+    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+        aria-controls="collapseExample">
+        <i class="fas fa-angle-down"></i> Cottage pie
+    </a>
+</p>
+<div class="collapse" id="collapseExample">
+    <div class="card card-body">
+        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user
+        activates the relevant trigger.
+        <button class="btn btn-outline-success" type="submit">Go to recipe</button>
+    </div>
+</div>
 
 {% endblock %}

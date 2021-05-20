@@ -1,28 +1,81 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-        </div>
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/static/images/breakfast.jpg" class="d-block w-100" alt="picture of a breakfast">
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
+    <div class="carousel-item">
+      <img src="/static/images/bread.jpg" class="d-block w-100" alt="picture of bread">
+    </div>
+    <div class="carousel-item">
+      <img src="/static/images/chinese.jpg" class="d-block w-100" alt="picture of Chinese food">
+    </div>
+    <div class="carousel-item active">
+      <img src="/static/images/dessert.jpg" class="d-block w-100" alt="picture of a dessert">
+    </div>
+    <div class="carousel-item">
+      <img src="/static/images/irish.jpg" class="d-block w-100" alt="picture of Irish food">
+    </div>
+    <div class="carousel-item">
+      <img src="/static/images/italian.jpg" class="d-block w-100" alt="picture of Italian food">
+    </div>
+    <div class="carousel-item active">
+      <img src="/static/images/japanese.jpg" class="d-block w-100" alt="picture of Japanese food">
+    </div>
+    <div class="carousel-item">
+      <img src="/static/images/pizza.jpg" class="d-block w-100" alt="picture of a pizza">
+    </div>
+    <div class="carousel-item">
+      <img src="/static/images/salad.jpg" class="d-block w-100" alt="picture of a salad">
+    </div>
+     <div class="carousel-item">
+      <img src="/static/images/steak.jpg" class="d-block w-100" alt="picture of a steak">
+    </div>
+    <div class="carousel-item">
+      <img src="/static/images/thai.jpg" class="d-block w-100" alt="picture of Thai food">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
+<div class="row">
+    <h3 class="hiw-head">How it works</h3>
+    <div class="col-sm-4 hiw-card">
+    <div class="card">
+      <div class="card-body hiw-card-body">
+        <h5 class="card-title">Search and discover</h5>
+        <p class="card-text">Search through our recipes and discover new and delicious meals to prepare.</p>
+        <a href="{{ url_for('get_recipes') }}" class="btn btn-primary">Search recipes</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 hiw-card">
+    <div class="card">
+      <div class="card-body hiw-card-body">
+        <h5 class="card-title">Register to join our pod</h5>
+        <p class="card-text">Register an account and connect with other members</p>
+        <a href="{{ url_for('register') }}" class="btn btn-primary">Register</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 hiw-card">
+    <div class="card">
+      <div class="card-body hiw-card-body">
+        <h5 class="card-title">Create and add</h5>
+        <p class="card-text">Members can log in and add their own creations to the recipes or update their existing recipes.</p>
+        <a href="{{ url_for('login') }}" class="btn btn-primary">Log in</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 {% endblock %}
