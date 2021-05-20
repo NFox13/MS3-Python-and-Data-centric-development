@@ -5,6 +5,7 @@
     <div class="card-header">Registration page</div>
     <div class="card-body text-dark">
         <h5 class="card-title">JOIN OUR POD</h5>
+        <h6 class="card-title">Username/password must be 6-12 characters long using letters and numbers only with no spaces</h6>
         <div class="mb-3 row">
             <label for="username" class="col-sm-2 col-form-label">Username</label>
             <div class="col-sm-10">
@@ -25,11 +26,11 @@
     </div>
 </form>
 
-<div class="row">
+<div class="row register-a">
     <div class="col s12">
         <p>
             If you are already registered please log in.
-            <a href="{{ url_for('register') }}" class="register-a">Log in here</a>
+            <a href="{{ url_for('login') }}">Log in here</a>
         </p>
     </div>
 </div>

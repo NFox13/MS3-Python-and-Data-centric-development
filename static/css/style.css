@@ -40,7 +40,10 @@
     background-color: #affc41;
 }
 
-/* ---------------------------------------------Registration page*/
+/* ---------------------------------------------Registration/login page*/
+.card {
+    margin: 5px;
+}
 
 .card-header {
     text-align: center;
@@ -59,4 +62,9 @@
 
 .btn {
     background-color: #3c1642;
+}
+
+.register-a {
+     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }

@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-<form class="card border-dark" method="POST" action="{{ url_for('register') }}">
+<form class="card border-dark" method="POST" action="{{ url_for('login') }}">
     <div class="card-header">WELCOME BACK!</div>
     <div class="card-body text-dark">
         <h5 class="card-title">Log in page</h5>
@@ -25,11 +25,11 @@
     </div>
 </form>
 
-<div class="row">
+<div class="row register-a">
     <div class="col s12">
         <p>
             If you are not already registered please register to join our pod.
-            <a href="{{ url_for('register') }}" class="register-a">Register here</a>
+            <a href="{{ url_for('register') }}">Register here</a>
         </p>
     </div>
 </div>
