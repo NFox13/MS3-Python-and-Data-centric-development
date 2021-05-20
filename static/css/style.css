@@ -99,3 +99,13 @@
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
+
+/* ---------------------------------------------Recipes page*/
+.row a {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+.no-bullets {
+    list-style-type: none;
+}
