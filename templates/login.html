@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form class="card border-dark" method="POST" action="{{ url_for('register') }}">
+    <div class="card-header">WELCOME BACK!</div>
+    <div class="card-body text-dark">
+        <h5 class="card-title">Log in page</h5>
+        <div class="mb-3 row">
+            <label for="username" class="col-sm-2 col-form-label">Username</label>
+            <div class="col-sm-10">
+                <input type="text" name="username" class="form-control" id="username" pattern="^[a-zA-Z0-9]{6,12}$"
+                    minlength="6" maxlength="12" required>
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="password" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" name="password" class="form-control" id="password" pattern="^[a-zA-Z0-9]{6,12}$"
+                    minlength="6" maxlength="12" required>
+            </div>
+        </div>
+        <div class="register-btn">
+            <button type="submit" class="btn btn-primary mb-3">LOG IN</button>
+        </div>
+    </div>
+</form>
+
+<div class="row">
+    <div class="col s12">
+        <p>
+            If you are not already registered please register to join our pod.
+            <a href="{{ url_for('register') }}" class="register-a">Register here</a>
+        </p>
+    </div>
+</div>
+
+{% endblock %}
