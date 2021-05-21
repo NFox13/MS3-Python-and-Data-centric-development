@@ -14,26 +14,21 @@
 {{ recipe.is_vegan }}<br>
 {% endfor %}
 
-<ul class="no-bullets">
+<div class="list-group">
     {% for recipe in recipes %}
-    <li>
-        <p class="row">
-            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
-                aria-expanded="false" aria-controls="collapseExample">
-                <i class="fas fa-angle-down"></i> <strong>{{ recipe.recipe_name }}</strong> 
-                {% if recipe.is_vegan == "true" %}
-                    <i class="fas fa-seedling" data-bs-toggle="tooltip" data-bs-placement="right" title="Recipe is suitable for vegans"></i>
-                {% endif %}
-            </a>
-        </p>
-        <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-                {{ recipe.recipe_description }}
-                <button class="btn btn-outline-success" type="submit">Go to recipe</button>
-            </div>
+    <a href="{{ url_for('get_recipes') }}" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">{{ recipe.recipe_name }}</h5>
+            {% if recipe.is_vegan == "true" %}
+            <i class="fas fa-seedling" data-bs-toggle="tooltip" data-bs-placement="right"
+                title="Recipe is suitable for vegans"></i>
+            {% endif %}
         </div>
-    </li>
+        <p class="mb-1">{{ recipe.recipe_description }}
+        </p>
+        <small>{{ recipe.recipe_date }}</small>
+    </a>
     {% endfor %}
-</ul>
+</div>
 
 {% endblock %}
