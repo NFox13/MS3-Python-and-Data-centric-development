@@ -60,6 +60,12 @@
     background-color: #affc41;
 }
 
+.hero-image {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
 /* ---------------------------------------------Registration/login page*/
 .card {
     margin: 5px;

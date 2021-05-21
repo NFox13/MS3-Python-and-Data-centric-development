@@ -2,7 +2,7 @@
 {% block content %}
 
 {% for recipe in recipes %}
-{{ recipe.recipe_name }}<br>
+<br>
 {{ recipe.cuisine_type }}<br>
 {{ recipe.recipe_ingredients }}<br>
 {{ recipe.recipe_description }}<br>
@@ -14,8 +14,8 @@
 {{ recipe.is_vegan }}<br>
 {% endfor %}
 
-<div class="card border-dark" method="POST" action="{{ url_for('view_recipe') }}">
-    <div class="card-header">Registration page</div>
+<div class="card border-dark">
+    <div class="card-header">{{ recipe.recipe_name }}</div>
     <div class="card-body text-dark">
         <h5 class="card-title">JOIN OUR POD</h5>
         <h6 class="card-title">Username/password must be 6-12 characters long using letters and numbers only with no spaces</h6>
