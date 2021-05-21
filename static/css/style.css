@@ -60,11 +60,6 @@
     background-color: #affc41;
 }
 
-.carousel-item {
-    max-height: 400px;
-    min-width: auto;
-}
-
 /* ---------------------------------------------Registration/login page*/
 .card {
     margin: 5px;
@@ -108,4 +103,10 @@
 
 .no-bullets {
     list-style-type: none;
+}
+
+/* ---------------------------------------------Add a recipe page*/
+.add-recipe {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
