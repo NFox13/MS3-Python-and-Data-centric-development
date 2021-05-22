@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div>
+    <h3 class="add-recipe">Edit recipe</h3>
+</div>
+
+<div class="row">
+    <form class="col s12" method="post" action="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">
+        <div class="row">
+            <div class="mb-3">
+                <label for="recipe_name" class="form-label">Recipe name</label>
+                <input type="text" class="form-control" id="recipe_name" name="recipe_name" minlength="5" maxlength="50"
+                    placeholder="Enter recipe name" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3">
+                <label for="cuisine_type" class="form-label">Cuisine type</label>
+                <input type="text" class="form-control" id="cuisine_type" name="cuisine_type" minlength="3"
+                    maxlength="20" placeholder="Enter cuisine type" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3">
+                <label for="recipe_ingredients" class="form-label">Ingredients</label>
+                <input type="text" class="form-control" id="recipe_ingredients" name="recipe_ingredients" minlength="5" maxlength="200"
+                    placeholder="Enter ingredients" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3">
+                <label for="recipe_description" class="form-label">Description</label>
+                <input type="text" class="form-control" id="recipe_description" name="recipe_description" minlength="3"
+                    maxlength="200" placeholder="Enter description" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3">
+                <label for="recipe_preparation" class="form-label">Preparation</label>
+                <input type="text" class="form-control" id="recipe_preparation" name="recipe_preparation" minlength="5" maxlength="200"
+                    placeholder="Enter preparation steps" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3">
+                <label for="cooking_time" class="form-label">Cooking time</label>
+                <input type="text" class="form-control" id="cooking_time" name="cooking_time" minlength="3"
+                    maxlength="20" placeholder="Enter cooking time" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3">
+                <label for="serving_size" class="form-label">Serving size</label>
+                <input type="text" class="form-control" id="serving_size" name="serving size"
+                    placeholder="Enter serving size" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-check form-switch">
+                <i class="fas fa-seedling" data-bs-toggle="tooltip" data-bs-placement="right"
+                title="Recipe is suitable for vegans"></i>
+                <input class="form-check-input" type="checkbox" id="is_vegan" name="is_vegan">
+                <label class="form-check-label" for="is_vegan">Check switch if recipe is suitable for vegans</label>
+            </div>
+        </div>
+        <div class="row">
+           <input class="btn btn-primary" type="submit" value="Edit recipe">
+        </div>
+    </form>
+</div>
+
+{% endblock %}

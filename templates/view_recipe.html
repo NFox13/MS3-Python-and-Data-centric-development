@@ -35,8 +35,8 @@
         </table>
         <p>Recipe preparation steps</p>
         <div class="row edel-btns">
-            <button type="submit" class="edit-btn btn btn-primary mb-3">Edit recipe</button>
-            <button type="submit" class="delete-btn btn btn-primary mb-3">Delete recipe</button>
+            <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="edit-btn btn btn-primary">Edit recipe</a>
+            <a href="{{ url_for('login') }}" class="delete-btn btn btn-primary">Delete recipe</a>
         </div>
     </div>
 </form>

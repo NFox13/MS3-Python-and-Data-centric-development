@@ -80,10 +80,13 @@ def login():
 
     return render_template("login.html")
 
-@app.route("/get_recipes")
-def get_recipes():
-    recipes = list(mongo.db.recipes.find())
-    return render_template("recipes.html", recipes=recipes)
+
+@app.route("/logout")
+def logout():
+    # remove user from session cookie
+    flash("You have been logged out")
+    session.pop("user")
+    return redirect(url_for("login"))
 
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
@@ -97,21 +100,17 @@ def profile(username):
 
     return redirect(url_for("login"))
 
-@app.route("/logout")
-def logout():
-    # remove user from session cookie
-    flash("You have been logged out")
-    session.pop("user")
-    return redirect(url_for("login"))
+
+@app.route("/get_recipes")
+def get_recipes():
+    recipes = list(mongo.db.recipes.find())
+    return render_template("recipes.html", recipes=recipes)
 
 
 @app.route('/view_recipe/<recipe_id>')
 def view_recipe(recipe_id):
-    try:
-        the_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
-        return render_template('view_recipe.html', recipe=the_recipe)
-    except Exception:
-        return render_template("404_error.html")
+    the_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    return render_template('view_recipe.html', recipe=the_recipe)
 
 
 @app.route("/add_recipe", methods=["GET", "POST"])
@@ -134,6 +133,12 @@ def add_recipe():
         return redirect(url_for("get_recipes"))
 
     return render_template("add_recipe.html")    
+
+
+@app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
+def edit_recipe(recipe_id):
+    the_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    return render_template("edit_recipe.html", recipe=the_recipe)
 
 
 if __name__ == "__main__":
