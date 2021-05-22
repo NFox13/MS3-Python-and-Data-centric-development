@@ -151,6 +151,10 @@ body {
     margin-right: auto;
 }
 
+.act-btns a {
+    text-align: center;
+}
+
 /* ---------------------------------------------Add a recipe page*/
 .add-recipe {
     text-align: center;
