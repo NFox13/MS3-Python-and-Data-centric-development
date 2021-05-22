@@ -1,3 +1,10 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
 /* ---------------------------------------------base.html*/
 /* ---------------------------------------------Navbar*/
 .navbar {
@@ -60,10 +67,15 @@
     background-color: #affc41;
 }
 
+/* The hero image */
 .hero-image {
-    margin-left: 50%;
-    transform: translateX(-50%);
-    overflow: hidden;
+  background: url("/static/images/salad.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  height: 300px;
+  width: 100%;
+  margin: 0;
 }
 
 /* ---------------------------------------------Registration/login page*/
@@ -102,6 +114,12 @@
 }
 
 /* ---------------------------------------------Recipes page*/
+.recipes-heading {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px;
+}
+
 .row a {
     text-align: left;
     font-family: 'Roboto', sans-serif;
@@ -109,6 +127,10 @@
 
 .no-bullets {
     list-style-type: none;
+}
+
+.list-group a {
+     background-color: #affc41;
 }
 
 /* ---------------------------------------------Add a recipe page*/

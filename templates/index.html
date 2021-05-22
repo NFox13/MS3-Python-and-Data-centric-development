@@ -1,37 +1,38 @@
 {% extends "base.html" %}
 {% block content %}
 
-<img src="/static/images/italian.jpg" class="img-fluid hero-image" alt="picture of Italian food">
-
+<div class="hero-image">
+</div>
 <div class="row">
     <h3 class="hiw-head">How it works</h3>
     <div class="col-sm-4 hiw-card">
-    <div class="card">
-      <div class="card-body hiw-card-body">
-        <h5 class="card-title">Search and discover</h5>
-        <p class="card-text">Search through our recipes and discover new and delicious meals to prepare.</p>
-        <a href="{{ url_for('get_recipes') }}" class="btn btn-primary">Search recipes</a>
-      </div>
+        <div class="card">
+            <div class="card-body hiw-card-body">
+                <h5 class="card-title">Search and discover</h5>
+                <p class="card-text">Search through our recipes and discover new and delicious meals to prepare.</p>
+                <a href="{{ url_for('get_recipes') }}" class="btn btn-primary">Search recipes</a>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="col-sm-4 hiw-card">
-    <div class="card">
-      <div class="card-body hiw-card-body">
-        <h5 class="card-title">Register to join our pod</h5>
-        <p class="card-text">Register an account and connect with other members</p>
-        <a href="{{ url_for('register') }}" class="btn btn-primary">Register</a>
-      </div>
+    <div class="col-sm-4 hiw-card">
+        <div class="card">
+            <div class="card-body hiw-card-body">
+                <h5 class="card-title">Register to join our pod</h5>
+                <p class="card-text">Register an account and connect with other members</p>
+                <a href="{{ url_for('register') }}" class="btn btn-primary">Register</a>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="col-sm-4 hiw-card">
-    <div class="card">
-      <div class="card-body hiw-card-body">
-        <h5 class="card-title">Create and add</h5>
-        <p class="card-text">Members can log in and add their own creations to the recipes or update their existing recipes.</p>
-        <a href="{{ url_for('login') }}" class="btn btn-primary">Log in</a>
-      </div>
+    <div class="col-sm-4 hiw-card">
+        <div class="card">
+            <div class="card-body hiw-card-body">
+                <h5 class="card-title">Create and add</h5>
+                <p class="card-text">Members can log in and add their own creations to the recipes or update their
+                    existing recipes.</p>
+                <a href="{{ url_for('login') }}" class="btn btn-primary">Log in</a>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 
