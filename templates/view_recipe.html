@@ -39,7 +39,7 @@
         <div class="row edel-btns">
             {% if session.user|lower == recipe.recipe_author|lower %}
             <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="act-btn btn btn-primary">Edit recipe</a>
-            <a href="#" class="act-btn btn btn-primary">Delete recipe</a>
+            <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="act-btn btn btn-primary">Delete recipe</a>
             {% endif %}
         </div>
     </div>
