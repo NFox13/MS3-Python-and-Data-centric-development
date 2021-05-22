@@ -1,16 +1,3 @@
-{% for recipe in recipes %}
-{{ recipe.recipe_name }}<br>
-{{ recipe.cuisine_type }}<br>
-{{ recipe.recipe_ingredients }}<br>
-{{ recipe.recipe_description }}<br>
-{{ recipe.recipe_preparation }}<br>
-{{ recipe.cooking_time }}<br>
-{{ recipe.serving_size }}<br>
-{{ recipe.recipe_author }}<br>
-{{ recipe.is_vegan }}<br>
-{% endfor %}
-
-
 {% extends "base.html" %}
 {% block content %}
 <h3>This is the view recipe page</h3>
