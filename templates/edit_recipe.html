@@ -52,7 +52,7 @@
         <div class="row">
             <div class="mb-3">
                 <label for="serving_size" class="form-label">Serving size</label>
-                <input type="text" class="form-control" id="serving_size" name="serving size"
+                <input type="text" class="form-control" id="serving_size" name="serving_size"
                     value="{{ recipe.serving_size }}" required>
             </div>
         </div>
@@ -68,8 +68,8 @@
                 <label class="form-check-label" for="is_vegan">Check switch if recipe is suitable for vegans</label>
             </div>
         </div>
-        <div class="row">
-            <a href="#" class="act-btn btn btn-primary">Edit recipe</a>
+        <div class="row act-btns">
+            <button type="submit" class="act-btn btn btn-primary">Edit Recipe</button>
             <a href="{{ url_for('get_recipes') }}" class="act-btn btn btn-primary">Cancel edit</a>
         </div>
     </form>

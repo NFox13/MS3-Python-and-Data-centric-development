@@ -137,8 +137,24 @@ def add_recipe():
 
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
-    the_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
-    return render_template("edit_recipe.html", recipe=the_recipe)
+    if request.method == "POST":
+        is_vegan = "on" if request.form.get("is_vegan") else "off"
+        edit = {
+            "recipe_name": request.form.get("recipe_name"),
+            "cuisine_type": request.form.get("cuisine_type"),
+            "recipe_ingredients": request.form.get("recipe_ingredients"),
+            "recipe_description": request.form.get("recipe_description"),
+            "recipe_preparation": request.form.get("recipe_preparation"),
+            "cooking_time": request.form.get("cooking_time"),
+            "serving_size": request.form.get("serving_size"),
+            "recipe_author": session["user"],
+            "is_vegan": is_vegan
+        }
+        mongo.db.recipes.update({"_id": ObjectId(recipe_id)}, edit)
+        flash("Recipe Successfully Edited")
+
+    recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    return render_template("edit_recipe.html", recipe=recipe)
 
 
 if __name__ == "__main__":

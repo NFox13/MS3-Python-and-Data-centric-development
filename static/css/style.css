@@ -138,7 +138,7 @@ body {
 .table, th, td {
   border: 1px solid black;
 }
-.edel-btns {
+.act-btns {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     margin-left: auto;
