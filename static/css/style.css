@@ -70,11 +70,11 @@ body {
 
 /* The hero image */
 .hero-image {
-    background: url("/static/images/salad.jpg");
+    background: url("/static/images/italian.jpg");
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
-    height: 300px;
+    height: 350px;
     width: 100%;
     margin: 0;
 }
