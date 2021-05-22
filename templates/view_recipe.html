@@ -7,7 +7,6 @@
 {{ recipe.cooking_time }}<br>
 {{ recipe.serving_size }}<br>
 {{ recipe.recipe_author }}<br>
-{{ recipe.recipe_date }}<br>
 {{ recipe.is_vegan }}<br>
 {% endfor %}
 
@@ -35,8 +34,8 @@
         </table>
         <p>Recipe preparation steps</p>
         <div class="row edel-btns">
-            <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="edit-btn btn btn-primary">Edit recipe</a>
-            <a href="{{ url_for('login') }}" class="delete-btn btn btn-primary">Delete recipe</a>
+            <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="act-btn btn btn-primary">Edit recipe</a>
+            <a href="{{ url_for('login') }}" class="act-btn btn btn-primary">Delete recipe</a>
         </div>
     </div>
 </form>
