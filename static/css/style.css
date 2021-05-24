@@ -127,6 +127,24 @@ footer a:active {
     font-family: 'Roboto', sans-serif;
 }
 
+.register-a a:link,
+.register-a a:visited {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #3c1642;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.register-a a:hover,
+.register-a a:active {
+    background-color: #affc41;
+    color: #3c1642;
+}
+
 /* ---------------------------------------------Profile page*/
 .profile {
     text-align: center;
