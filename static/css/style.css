@@ -36,14 +36,33 @@ body {
 }
 
 /* ---------------------------------------------footer*/
-.footer {
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #3c1642;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+footer a:link,
+footer a:visited {
     background-color: #3c1642;
     color: white;
+    padding: 14px 25px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+footer a:hover,
+footer a:active {
+    background-color: #affc41;
+    color: #3c1642;
 }
 
 /* ---------------------------------------------Flash messages*/
@@ -135,9 +154,12 @@ body {
 }
 
 /* ---------------------------------------------View recipe page*/
-.table, th, td {
-  border: 1px solid black;
+.table,
+th,
+td {
+    border: 1px solid black;
 }
+
 .act-btns {
     text-align: center;
     font-family: 'Roboto', sans-serif;
