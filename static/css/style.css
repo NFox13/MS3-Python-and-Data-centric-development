@@ -160,3 +160,10 @@ body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
+
+/* ---------------------------------------------Products page*/
+.prod-head {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+}

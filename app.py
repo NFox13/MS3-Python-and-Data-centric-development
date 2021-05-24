@@ -164,6 +164,17 @@ def delete_recipe(recipe_id):
     return redirect(url_for("get_recipes"))
 
 
+@app.route("/user_profile")
+def user_profile():
+    profile_recipes = mongo.db.recipes.find()
+    return render_template("profile.html", recipes=profile_recipes)
+
+
+@app.route('/get_products')
+def get_products():
+    return render_template('products.html')
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
