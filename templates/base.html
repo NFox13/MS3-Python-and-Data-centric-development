@@ -59,8 +59,9 @@
                         </li>
                         {% endif %}
                     </ul>
-                    <form class="d-flex search-bt">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <form action="{{ url_for('search') }}" method="post" class="d-flex search-bt">
+                        <input class="form-control me-2 validate" type="text" name="search" id="search" minlength="3"
+                        required placeholder="Search recipes" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>
