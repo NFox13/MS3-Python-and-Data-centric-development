@@ -9,49 +9,49 @@
     <form class="col s12" method="post" action="{{ url_for('add_recipe') }}">
         <div class="row">
             <div class="mb-3">
-                <label for="recipe_name" class="form-label">Recipe name</label>
+                <label for="recipe_name" class="form-label">Recipe name (Maximum length 50 characters)</label>
                 <input type="text" class="form-control" id="recipe_name" name="recipe_name" minlength="5" maxlength="50"
                     placeholder="Enter recipe name" required>
             </div>
         </div>
         <div class="row">
             <div class="mb-3">
-                <label for="cuisine_type" class="form-label">Cuisine type</label>
+                <label for="cuisine_type" class="form-label">Cuisine type (Maximum length 20 characters)</label>
                 <input type="text" class="form-control" id="cuisine_type" name="cuisine_type" minlength="3"
                     maxlength="20" placeholder="Enter cuisine type" required>
             </div>
         </div>
         <div class="row">
             <div class="mb-3">
-                <label for="recipe_ingredients" class="form-label">Ingredients</label>
+                <label for="recipe_ingredients" class="form-label">Ingredients (Maximum length 200 characters)</label>
                 <input type="text" class="form-control" id="recipe_ingredients" name="recipe_ingredients" minlength="5" maxlength="200"
                     placeholder="Enter ingredients" required>
             </div>
         </div>
         <div class="row">
             <div class="mb-3">
-                <label for="recipe_description" class="form-label">Description</label>
-                <input type="text" class="form-control" id="recipe_description" name="recipe_description" minlength="3"
-                    maxlength="200" placeholder="Enter description" required>
+                <label for="recipe_description" class="form-label">Description (Maximum length 200 characters)</label>
+                <textarea type="text" class="form-control" id="recipe_description" name="recipe_description" maxlength="200"
+                required placeholder="Enter description"></textarea>
             </div>
         </div>
         <div class="row">
             <div class="mb-3">
-                <label for="recipe_preparation" class="form-label">Preparation</label>
-                <input type="text" class="form-control" id="recipe_preparation" name="recipe_preparation" minlength="5" maxlength="200"
-                    placeholder="Enter preparation steps" required>
+                <label for="recipe_preparation" class="form-label">Preparation (Maximum length 500 characters)</label>
+                <textarea type="text" class="form-control" id="recipe_preparation" name="recipe_preparation" maxlength="500"
+                placeholder="Enter preparation steps" required></textarea>
             </div>
         </div>
         <div class="row">
             <div class="mb-3">
-                <label for="cooking_time" class="form-label">Cooking time</label>
+                <label for="cooking_time" class="form-label">Cooking time (Maximum length 30 characters)</label>
                 <input type="text" class="form-control" id="cooking_time" name="cooking_time" minlength="3"
-                    maxlength="20" placeholder="Enter cooking time" required>
+                    maxlength="30" placeholder="Enter cooking time" required>
             </div>
         </div>
         <div class="row">
             <div class="mb-3">
-                <label for="serving_size" class="form-label">Serving size</label>
+                <label for="serving_size" class="form-label">Serving size (Maximum length 20 characters)</label>
                 <input type="text" class="form-control" id="serving_size" name="serving_size" minlength="3"
                     maxlength="20" placeholder="Enter serving size" required>
             </div>
@@ -64,8 +64,8 @@
                 <label class="form-check-label" for="is_vegan">Check switch if recipe is suitable for vegans</label>
             </div>
         </div>
-        <div class="row">
-           <input class="btn btn-primary" type="submit" value="Add recipe">
+        <div class="row act-btns">
+           <input class="act-btn btn btn-primary" type="submit" value="Add recipe">
         </div>
     </form>
 </div>

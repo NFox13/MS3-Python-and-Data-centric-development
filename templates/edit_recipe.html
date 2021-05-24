@@ -9,51 +9,55 @@
     <form class="col s12" method="post" action="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">
         <div class="row">
             <div class="mb-3">
-                <label for="recipe_name" class="form-label">Recipe name</label>
+                <label for="recipe_name" class="form-label">Recipe name (maximum length 50 characters)</label>
                 <input type="text" class="form-control" id="recipe_name" name="recipe_name" minlength="5" maxlength="50"
                     value="{{ recipe.recipe_name }}" required>
             </div>
         </div>
         <div class="row">
             <div class="mb-3">
-                <label for="cuisine_type" class="form-label">Cuisine type</label>
+                <label for="cuisine_type" class="form-label">Cuisine type (maximum length 20 characters)</label>
                 <input type="text" class="form-control" id="cuisine_type" name="cuisine_type" minlength="3"
                     maxlength="20" value="{{ recipe.cuisine_type }}" required>
             </div>
         </div>
         <div class="row">
             <div class="mb-3">
-                <label for="recipe_ingredients" class="form-label">Ingredients</label>
-                <input type="text" class="form-control" id="recipe_ingredients" name="recipe_ingredients" minlength="5" maxlength="200"
-                    value="{{ recipe.recipe_ingredients }}" required>
+                <label for="recipe_ingredients" class="form-label">Ingredients (maximum length 200 characters)</label>
+                <input type="text" class="form-control" id="recipe_ingredients" name="recipe_ingredients" minlength="5"
+                maxlength="200" value="{{ recipe.recipe_ingredients }}" required>
             </div>
         </div>
         <div class="row">
             <div class="mb-3">
-                <label for="recipe_description" class="form-label">Description</label>
-                <input type="text" class="form-control" id="recipe_description" name="recipe_description" minlength="3"
-                    maxlength="200" value="{{ recipe.recipe_description }}" required>
+                <label for="recipe_description" class="form-label">Description (maximum length 200 characters)</label>
+                <textarea type="text" class="form-control" id="recipe_description" name="recipe_description"
+                maxlength="200" required>
+                    {{-recipe.recipe_description-}}
+                </textarea>
             </div>
         </div>
         <div class="row">
             <div class="mb-3">
-                <label for="recipe_preparation" class="form-label">Preparation</label>
-                <input type="text" class="form-control" id="recipe_preparation" name="recipe_preparation" minlength="5" maxlength="200"
-                    value="{{ recipe.recipe_preparation }}" required>
+                <label for="recipe_preparation" class="form-label">Preparation (Maximum length 500 characters)</label>
+                <textarea type="text" class="form-control" id="recipe_preparation" name="recipe_preparation"
+                maxlength="500" required>
+                    {{-recipe.recipe_preparation-}}
+                </textarea>
             </div>
         </div>
         <div class="row">
             <div class="mb-3">
-                <label for="cooking_time" class="form-label">Cooking time</label>
+                <label for="cooking_time" class="form-label">Cooking time (Maximum length 30 characters)</label>
                 <input type="text" class="form-control" id="cooking_time" name="cooking_time" minlength="3"
-                    maxlength="20" value="{{ recipe.cooking_time }}" required>
+                    maxlength="30" value="{{ recipe.cooking_time }}" required>
             </div>
         </div>
         <div class="row">
             <div class="mb-3">
-                <label for="serving_size" class="form-label">Serving size</label>
-                <input type="text" class="form-control" id="serving_size" name="serving_size"
-                    value="{{ recipe.serving_size }}" required>
+                <label for="serving_size" class="form-label">Serving size (Maximum length 20 characters)</label>
+                <input type="text" class="form-control" id="serving_size" name="serving_size" minlength="3"
+                    maxlength="20" value="{{ recipe.serving_size }}" required>
             </div>
         </div>
         <div class="row">
