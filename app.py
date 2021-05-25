@@ -21,9 +21,7 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route('/get_home')
 def get_home():
-    """
-    On page load, index page is displayed.
-    """
+    # On page load, index page is displayed.
     return render_template('index.html')
 
 
@@ -83,10 +81,13 @@ def login():
 
 @app.route("/logout")
 def logout():
+    if "user" not in session:
+        flash("Oops, it looks like you are not logged in.")
+        return redirect(url_for("login"))
     # remove user from session cookie
     flash("You have been logged out")
     session.pop("user")
-    return redirect(url_for("login"))
+    return redirect(url_for("login"))  
 
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
@@ -122,6 +123,9 @@ def view_recipe(recipe_id):
 
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
+    if "user" not in session:
+        flash("Oops, it looks like you are not logged in.")
+        return redirect(url_for("login"))
     if request.method == "POST":
         is_vegan = "on" if request.form.get("is_vegan") else "off"
         recipe = {
@@ -144,6 +148,9 @@ def add_recipe():
 
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
+    if "user" not in session:
+        flash("Oops, it looks like you are not logged in.")
+        return redirect(url_for("login"))
     if request.method == "POST":
         is_vegan = "on" if request.form.get("is_vegan") else "off"
         edit = {
@@ -166,15 +173,12 @@ def edit_recipe(recipe_id):
 
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
+    if "user" not in session:
+        flash("Oops, it looks like you are not logged in.")
+        return redirect(url_for("login"))
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
     flash("Recipe Successfully Deleted")
     return redirect(url_for("get_recipes"))
-
-
-@app.route("/user_profile")
-def user_profile():
-    profile_recipes = mongo.db.recipes.find()
-    return render_template("profile.html", recipes=profile_recipes)
 
 
 @app.route('/get_products')
