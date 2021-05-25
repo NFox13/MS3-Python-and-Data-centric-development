@@ -6,7 +6,7 @@
     <form action="{{ url_for('search') }}" method="post" class="d-flex search-bt">
         <input class="form-control me-2 validate" type="text" name="search" id="search" minlength="3" required
             placeholder="Search recipes" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button class="search-btn btn btn-outline-success" type="submit">Search</button>
         <a href="{{ url_for('get_recipes') }}" class="reset-btn btn btn-outline-success">Reset</a>
     </form>
 </div>

@@ -145,6 +145,36 @@ footer a:active {
     font-family: 'Roboto', sans-serif;
 }
 
+#welcome {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    color: black;
+}
+
+#time {
+    font-size: 8rem;
+}
+
+#welcome h1 {
+    margin-bottom: 3rem;
+}
+
+#welcome h2 {
+    margin-bottom: 0.5rem;
+    opacity: 0.6;
+}
+
+@media (max-width: 700px) {
+    #time {
+        font-size: 6rem;
+    }
+}
+
 /* ---------------------------------------------Recipes page*/
 .recipes-heading {
     text-align: center;
@@ -161,9 +191,13 @@ footer a:active {
     margin: 5px;
 }
 
+.search-btn {
+    margin: 2px;
+}
 .reset-btn {
     font-family: 'Roboto', sans-serif;
     color: red;
+    margin: 2px;
 }
 
 .row a {
