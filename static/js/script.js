@@ -26,6 +26,20 @@ function addZero(n) {
     return (parseInt(n, 10) < 10 ? "0" : "") + n;
 }
 
+//Set Greeting
+function setGreet() {
+    let today = new Date(),
+        hour = today.getHours();
+
+    if(hour < 12) {
+        greeting.textContent = "Good Morning";
+    } else if(hour < 18) {
+        greeting.textContent = "Good Afternoon";
+    } else {
+        greeting.textContent = "Good Evening";
+    }
+}
+
 //Run
 showTime();
-    
+setGreet();

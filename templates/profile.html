@@ -1,23 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="card border-dark">
-    <div class="card-header">
-        <h3 class="profile">
-            {{ username }}'s Profile
-        </h3>
-    </div>
-</div>
-
 <div id="welcome">
-<time id="time">4.56pm</time>
+    <time id="time"></time>
 
-<h1>
-    <span id="greetin">Good evening</span>
-    <span id="name">{{ username }}</span>
-</h1>
+    <h1>
+        <span id="greeting"></span>
+        <span id="name">{{ username }}</span>
+    </h1>
 
-<h2>What would you like to cook today?</h2>
+    <h2>Take a look through our recipes and decide what you would like to cook today</h2>
+    <h2>or add a recipe of your own so others can enjoy it also.</h2>
 </div>
 
 {% endblock %}
