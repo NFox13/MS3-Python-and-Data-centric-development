@@ -32,7 +32,8 @@ The website design is simple and responsive to aid the users experience. The des
 
 ### Wireframes
 I used [Balsamiq](https://balsamiq.com/) to create wireframes for the various pages on different screen sizes.
-- [Link to Wireframes](https://github.com/NFox13/MS3-Python-and-Data-centric-development/tree/master/static/wireframe) 
+- [Link to Wireframes](https://github.com/NFox13/MS3-Python-and-Data-centric-development/tree/master/static/wireframe)
+![Desktop landing wireframe](https://github.com/NFox13/MS3-Python-and-Data-centric-development/blob/master/static/wireframe/landing_page_dt.jpg) 
 
 ### Database
 MONGODB is used to store data at the backend. The information required was thought out before creating database and relevant collections.
