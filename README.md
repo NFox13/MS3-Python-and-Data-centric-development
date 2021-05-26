@@ -138,3 +138,35 @@ During testing and following a discussion with my mentor, Felipe Souza Alarcon, 
 ![lighthouse performance report](https://github.com/NFox13/MS3-Python-and-Data-centric-development/blob/master/static/testing/lighthouse.jpg)
 #### Unfixed Bugs
 There are some css errors highlighting but they are arrising from bootstrap code that I have not altered.
+
+## Deployment to Heroku
+- **[The Pea Pod Live Page](https://the-pea-pod.herokuapp.com/)**
+1. Login to **[Heroko](https://www.heroku.com/)** account.
+2. Click on **New** at the right top corner and click on **Create new app**.
+3. Choose **App name** and a **region**. Then click on **Create app**.
+4. Go to terminal window and create **requirements.txt** by running command **pip3 freeze --local > requirements.txt**
+5. Then create **Procfile** by running command **echo web: python app.py > Procfile** **Remember P is capital**
+6. Add these files to staging area by running command **git add .**
+7. Then commit these file respectively by running command **git commit -m "Added requirements.txt & Procfile**.
+8. Then push these files to **github** by running command **git push**
+9. Go back to **Heroku** to your **App** and click on **Deploy** tab. 
+10. Go to **Deployment Method** and click on **Github Connect to Github**.
+11. Make sure your **Github Profile** is displayed and add your **repository name** and click on **Search**.
+12. Find your repository then click on **Connect**.
+13. Go to **Settings** at the top and click on **Reveal Config Vars**.
+14. In **Config Vars** add **IP** with value **0.0.0.0** then add **PORT** with value **5000** then add **SECRET_KEY** then add **MONGO_URI** and then add **MONGO_DBNAME** which is the name of your database.
+15. Go back to **Deploy** tab and click on **Enable Automatic Deploys**.
+16. Click on **Deploy Branch**
+17. It will take a minute and display a message that **Your app was successfully deployed**.
+18. Click on **View** to launch your deployed app.
+
+## Local Deployment
+- **[The Pea Pod Github Repository](https://github.com/NFox13/MS3-Python-and-Data-centric-development)**
+1. Go to [The Pea Pod Github Repository](https://github.com/NFox13/MS3-Python-and-Data-centric-development)
+2. Click on **Code** beside **Gitpod**. 
+3. A drop down menu open then click on **Download Zip**
+4. Unzip the downloaded zip file.
+5. Open app.py file and install requirements.txt by running comman **pip3 install -r requirements.txt**.
+6. Create a database in **MONGODB** following this database schema - [DB Collections](https://github.com/NFox13/MS3-Python-and-Data-centric-development/blob/master/static/mongocollection/mongodb.jpg)
+7. Create env.py file and add **MONGO_URI** and **SECRET_KEY**. 
+8. Now run the app.py by running code **python3 app.py**
