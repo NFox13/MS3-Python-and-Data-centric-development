@@ -1,4 +1,4 @@
-<!--# The Pea pod
+# The Pea pod
 
 ![Logo](https://github.com/NFox13/MS3-Python-and-Data-centric-development/blob/master/static/images/logo.jpg)
 
@@ -77,7 +77,7 @@ I have viewed the site on various screen sizes from mobile devices, tablets, lap
 
 I have loaded the site through various web browsers to test how they work also, namely Google chrome, Mozilla Firefox and Internet explorer.
 
-During testing and following a discussion with my mentor, Felipe Souza Alarcon, who highlighted that by changing the url that he could access the add, edit and delete recipe options. As a result I added additional code to ensure that the user was in session before these options could be accessed. -->
+During testing and following a discussion with my mentor, Felipe Souza Alarcon, who highlighted that by changing the url that he could access the add, edit and delete recipe options. As a result I added additional code to ensure that the user was in session before these options could be accessed.
 
 
 Validator Testing
