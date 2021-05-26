@@ -173,11 +173,11 @@ There are some css errors highlighting but they are arrising from bootstrap code
 
 ## Credits
 ### Media
-I have used different resources for images, my logo, colour scheme etc. All are listed below:
+I have used different resources for image, my logo, colour scheme etc. All are listed below:
 
 - Font Awesome for the icons used on this site
 - Logo maker for the logo design
-- Unsplash for the image Photo by <a href="https://unsplash.com/@eaterscollective?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eaters Collective</a> on <a href="https://unsplash.com/s/photos/food?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Unsplash for the image. Photo by <a href="https://unsplash.com/@eaterscollective?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eaters Collective</a> on <a href="https://unsplash.com/s/photos/food?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 - Am I Responsive for the responsive image in the UX section
 - Coolers for generating my colour scheme - [Colour scheme](https://github.com/NFox13/MS3-Python-and-Data-centric-development/blob/master/static/images/colour_scheme.jpg)
 
@@ -185,9 +185,9 @@ I have used different resources for images, my logo, colour scheme etc. All are 
 ### Acknowledgements
 I would also like to thank the following for their part in this project
 
-My mentor, Felipe Souza Alarcon, for all his feedback and encouragemnt throughout this project
-Code Institute tutorials, in particular the Task manager mini project which served as the basis for my project
-W3 schools, Which I find extremely useful
-Stackoverflow for some troubleshooting
-Traversy media whose videos gave me inspiration for the user profile page and some additional research
-All of the above had an input or gave inspiration to various elements of this project for which I am very grateful
+- My mentor, Felipe Souza Alarcon, for all his feedback and encouragemnt throughout this project
+- Code Institute tutorials, in particular the Task manager mini project which served as the basis for my project
+- W3 schools, Which I find extremely useful
+- Stackoverflow for some troubleshooting
+- Traversy media whose videos gave me inspiration for the user profile page and some additional research
+- All of the above had an input or gave inspiration to various elements of this project for which I am very grateful
