@@ -6,9 +6,8 @@ Welcome to the Pea pod, this site was developed as a place for cooking enthusias
 Users have the option of browsing the recipes as a visitor or, if they would like to add some recipes of their own, they can sign up and add, edit or delete their recipes.
 Users are requested to browse a partners website to purchase cooking products.
 
-![Responsive Mockup](https://github.com/NFox13/MS3-Python-and-Data-centric-development/blob/master/static/testing/responsive.jpg)
-
 ## UX
+![Responsive Mockup](https://github.com/NFox13/MS3-Python-and-Data-centric-development/blob/master/static/testing/responsive.jpg)
 
  ### User Stories
  1. As a user, I want to be able to access a list of recipes.
@@ -170,3 +169,25 @@ There are some css errors highlighting but they are arrising from bootstrap code
 6. Create a database in **MONGODB** following this database schema - [DB Collections](https://github.com/NFox13/MS3-Python-and-Data-centric-development/blob/master/static/mongocollection/mongodb.jpg)
 7. Create env.py file and add **MONGO_URI** and **SECRET_KEY**. 
 8. Now run the app.py by running code **python3 app.py**
+
+
+## Credits
+### Media
+I have used different resources for images, my logo, colour scheme etc. All are listed below:
+
+- Font Awesome for the icons used on this site
+- Logo maker for the logo design
+- Unsplash for the image Photo by <a href="https://unsplash.com/@eaterscollective?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eaters Collective</a> on <a href="https://unsplash.com/s/photos/food?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Am I Responsive for the responsive image in the UX section
+- Coolers for generating my colour scheme - [Colour scheme](https://github.com/NFox13/MS3-Python-and-Data-centric-development/blob/master/static/images/colour_scheme.jpg)
+
+
+### Acknowledgements
+I would also like to thank the following for their part in this project
+
+My mentor, Felipe Souza Alarcon, for all his feedback and encouragemnt throughout this project
+Code Institute tutorials, in particular the Task manager mini project which served as the basis for my project
+W3 schools, Which I find extremely useful
+Stackoverflow for some troubleshooting
+Traversy media whose videos gave me inspiration for the user profile page and some additional research
+All of the above had an input or gave inspiration to various elements of this project for which I am very grateful
