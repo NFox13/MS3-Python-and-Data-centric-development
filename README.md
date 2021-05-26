@@ -1,8 +1,6 @@
-# The Pea pod
+<!--# The Pea pod
 
-<div align="center">
 ![Logo](https://github.com/NFox13/MS3-Python-and-Data-centric-development/blob/master/static/images/logo.jpg)
-</div>
 
 Welcome to the Pea pod, this site was developed as a place for cooking enthusiasts to visit and look up new recipes from a database of recipes uploaded by fellow users.
 Users have the option of browsing the recipes as a visitor or, if they would like to add some recipes of their own, they can sign up and add, edit or delete their recipes.
@@ -22,6 +20,7 @@ The features in this site were included taking the users experience into account
   - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
   - If a user opts to register they are redirected to their profile page and now have options to add new recipes and log out.
   - Users that are already registered will be redirected to their profile page on logging in and will have options to add new recipes and log out.
+  - The navbar collapses to a collapsible menu on smaller devices.
 
 - __The landing page__
 
@@ -69,4 +68,26 @@ The features in this site were included taking the users experience into account
 
 ### Features Left to Implement
 
-- Other feature ideas would to allow users to upload images of their recipes, maybe a forum to allow registered users to chat to each other or leave comments and also an option to rate the various recipes.
+- Other feature ideas would to allow users to upload images of their recipes, maybe a forum to allow registered users to chat to each other or leave comments and also an option to rate the various recipes. 
+
+Testing
+I have carried out extensive testing on the site by going through the site as a visitor, new member and returning member to check all features and links to ensure that they are working as intended.
+
+I have viewed the site on various screen sizes from mobile devices, tablets, laptops and desktop to check how it views on each.
+
+I have loaded the site through various web browsers to test how they work also, namely Google chrome, Mozilla Firefox and Internet explorer.
+
+During testing and following a discussion with my mentor, Felipe Souza Alarcon, who highlighted that by changing the url that he could access the add, edit and delete recipe options. As a result I added additional code to ensure that the user was in session before these options could be accessed. -->
+
+
+Validator Testing
+HTML
+![Logo](https://github.com/NFox13/MS3-Python-and-Data-centric-development/blob/master/static/testing/htmlValidator.jpg)
+CSS
+![Logo](https://github.com/NFox13/MS3-Python-and-Data-centric-development/blob/master/static/testing/cssValidator.jpg)
+Python PEP8 
+![Logo](https://github.com/NFox13/MS3-Python-and-Data-centric-development/blob/master/static/testing/pythonPep8Check.jpg)
+Lighthouse performance report
+![Logo](https://github.com/NFox13/MS3-Python-and-Data-centric-development/blob/master/static/testing/lighthouse.jpg)
+Unfixed Bugs
+There are some css errors highlighting but they are arrising from bootstrap code that I have not altered.
