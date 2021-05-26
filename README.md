@@ -80,14 +80,14 @@ I have loaded the site through various web browsers to test how they work also, 
 During testing and following a discussion with my mentor, Felipe Souza Alarcon, who highlighted that by changing the url that he could access the add, edit and delete recipe options. As a result I added additional code to ensure that the user was in session before these options could be accessed.
 
 
-Validator Testing
-HTML
+## Validator Testing
+### HTML
 ![html validator](https://github.com/NFox13/MS3-Python-and-Data-centric-development/blob/master/static/testing/htmlValidator.jpg)
-CSS
+### CSS
 ![css validator](https://github.com/NFox13/MS3-Python-and-Data-centric-development/blob/master/static/testing/cssValidator.jpg)
-Python PEP8 
+### Python PEP8 
 ![python pep8 validator](https://github.com/NFox13/MS3-Python-and-Data-centric-development/blob/master/static/testing/pythonPep8Check.jpg)
-Lighthouse performance report
+### Lighthouse performance report
 ![lighthouse performance report](https://github.com/NFox13/MS3-Python-and-Data-centric-development/blob/master/static/testing/lighthouse.jpg)
-Unfixed Bugs
+### Unfixed Bugs
 There are some css errors highlighting but they are arrising from bootstrap code that I have not altered.
