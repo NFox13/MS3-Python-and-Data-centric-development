@@ -111,6 +111,22 @@ I have loaded the site through various web browsers to test how they work also, 
 
 During testing and following a discussion with my mentor, Felipe Souza Alarcon, who highlighted that by changing the url that he could access the add, edit and delete recipe options. As a result I added additional code to ensure that the user was in session before these options could be accessed.
 
+## Technologies Used
+- **HTML**
+- **CSS** 
+- **JavaScript**
+- **JQuery** 
+- **Bootstrap**
+- **Python** 
+- **Flask**
+- **Jinja**
+- **Balsamiq**
+- **PyMongo**
+- **MongoDB**
+- **Google Fonts**
+- **Github**
+- **Gitpod**
+- **Heroku** 
 
 ## Validator Testing
 ### HTML
