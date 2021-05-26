@@ -8,6 +8,37 @@ Users are requested to browse a partners website to purchase cooking products.
 
 ![Responsive Mockup](https://github.com/NFox13/MS3-Python-and-Data-centric-development/blob/master/static/testing/responsive.jpg)
 
+## UX
+
+ ### User Stories
+ 1. As a user, I want to be able to access a list of recipes.
+ 2. As a user, I want to be able to search for recipes easily.
+ 3. As a user, I want to be able to create an account.
+ 4. As a user, I want to be able to login to my account.
+ 5. AS a user, I want to add my own recipes to the site.
+ 6. As a user, I want to be able to update my existing recipes. 
+ 7. As a user, I want to to be able to delete my existing recipes.
+ 8. As a user, I want to be able to log out of my profile.
+ 9. As a user, I want to know where I can source cooking products.
+10. As a user, I want to know if meals are suitable for vegans.
+
+ 1. As a site owner, I want to able to access an evergrowing list of entries
+ 2. As a site owner, I want to be able to promote or encourage site users to purchase my products or products from partner sites.
+ 3. As a site owner, I want to be have control over a database of users that are interested in cooking.
+
+## Design
+
+The website design is simple and responsive to aid the users experience. The design was inpired by the **Code Institute's Task Manager Mini Project** and skills learned from this module, in particular the CRUD functionality.
+
+### Wireframes
+I used [Balsamiq](https://balsamiq.com/) to create wireframes for the various pages on different screen sizes.
+- [Link to Wireframes](https://github.com/NFox13/MS3-Python-and-Data-centric-development/tree/master/static/wireframe) 
+
+### Database
+MONGODB is used to store data at the backend. The information required was thought out before creating database and relevant collections.
+- [DB Collections](https://github.com/NFox13/MS3-Python-and-Data-centric-development/blob/master/static/mongocollection/mongodb.jpg)
+
+
 ## Features 
 
 The features in this site were included taking the users experience into account. The site is designed to be easily navigated with labelled links availalbe on every page to bring the user to wherever they choose to go.
