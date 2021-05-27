@@ -261,3 +261,19 @@ td {
     font-family: 'Roboto', sans-serif;
     margin: 10px;
 }
+
+/* ---------------------------------------------404_error page*/
+.error-return {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+}
+
+.error-head {
+    margin: 10px;
+    color: red;
+}
+
+.error-link {
+    margin: 10px;
+}
