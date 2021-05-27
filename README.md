@@ -136,7 +136,7 @@ During testing and following a discussion with my mentor, Felipe Souza Alarcon, 
 #### Lighthouse performance report
 ![lighthouse performance report](https://github.com/NFox13/MS3-Python-and-Data-centric-development/blob/master/static/testing/lighthouse.jpg)
 #### Unfixed Bugs
-There are some css errors highlighting but they are arrising from bootstrap code that I have not altered.
+
 
 ## Deployment to Heroku
 - **[The Pea Pod Live Page](https://the-pea-pod.herokuapp.com/)**

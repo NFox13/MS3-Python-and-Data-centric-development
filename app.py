@@ -87,7 +87,7 @@ def logout():
     # remove user from session cookie
     flash("You have been logged out")
     session.pop("user")
-    return redirect(url_for("login"))  
+    return redirect(url_for("login"))
 
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
@@ -142,8 +142,7 @@ def add_recipe():
         mongo.db.recipes.insert_one(recipe)
         flash("Recipe Successfully Added")
         return redirect(url_for("get_recipes"))
-
-    return render_template("add_recipe.html")    
+    return render_template("add_recipe.html")
 
 
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
