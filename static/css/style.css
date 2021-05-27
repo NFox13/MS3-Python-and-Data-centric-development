@@ -214,10 +214,6 @@ footer a:active {
     background-color: #affc41;
 }
 
-.list-group {
-    overflow: auto;
-}
-
 .search-no {
     text-align: center;
     font-family: 'Roboto', sans-serif;
