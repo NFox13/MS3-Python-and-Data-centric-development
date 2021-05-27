@@ -99,7 +99,7 @@ The features in this site were included taking the users experience into account
 
 ### Features Left to Implement
 
-- Other feature ideas would to allow users to upload images of their recipes, maybe a forum to allow registered users to chat to each other or leave comments and also an option to rate the various recipes. 
+- Other feature ideas would be to have the users recipes on their profile page, allow users to upload images of their recipes, maybe a forum to allow registered users to chat to each other or leave comments and also an option to rate the various recipes. 
 
 ## Technologies Used
 - **HTML**
@@ -136,7 +136,7 @@ During testing and following a discussion with my mentor, Felipe Souza Alarcon, 
 #### Lighthouse performance report
 ![lighthouse performance report](https://github.com/NFox13/MS3-Python-and-Data-centric-development/blob/master/static/testing/lighthouse.jpg)
 #### Unfixed Bugs
-
+I like the look that the sticky footer element provides but sometimes the list content when highlighted will show through.
 
 ## Deployment to Heroku
 - **[The Pea Pod Live Page](https://the-pea-pod.herokuapp.com/)**
